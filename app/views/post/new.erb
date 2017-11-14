@@ -1,0 +1,13 @@
+<h1>게시글 작성</h1>
+
+<p></p>
+
+<%= form_tag("/post/create", method: "post") do %>
+    <%= label_tag(:title, "제목: ") %>
+    <%= text_field_tag(:title) %><br>
+    
+    <%= label_tag(:content, "내용: ") %>
+    <%= text_field_tag(:content) %>
+    
+    <%= submit_tag("글쓰기") %>
+<% end %>
